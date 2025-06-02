@@ -56,6 +56,42 @@ import {
 
 Represents a length value with optional minimum and maximum constraints.
 
+## Usage Example
+
+```typescript
+import { Length } from '@typescript-package/length';
+
+// Example 1: Exact value
+const exactLength = new Length(5);
+console.log(exactLength.value);  // 5
+console.log(exactLength.min);    // undefined
+console.log(exactLength.max);    // undefined
+
+// Example 2: Min/Max range
+const rangeLength = new Length({ min: 2, max: 10 });
+console.log(rangeLength.value);  // undefined
+console.log(rangeLength.min);    // 2
+console.log(rangeLength.max);    // 10
+
+// Example 3: Set min, max, and value dynamically
+const flexibleLength = new Length();
+flexibleLength.setMin(3).setMax(7);
+console.log(flexibleLength.min); // 3
+console.log(flexibleLength.max); // 7
+
+flexibleLength.setLength(5);
+console.log(flexibleLength.value); // 5
+
+// Example 4: Use setMinMax and reset
+flexibleLength.setMinMax(4, 8);
+console.log(flexibleLength.min); // 4
+console.log(flexibleLength.max); // 8
+
+flexibleLength.setMinMax(undefined, undefined);
+console.log(flexibleLength.min); // undefined
+console.log(flexibleLength.max); // undefined
+```
+
 ## Contributing
 
 Your contributions are valued! If you'd like to contribute, please feel free to submit a pull request. Help is always appreciated.
