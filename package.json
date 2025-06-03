@@ -9,7 +9,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@typedly/settings": "^0.2.0"
+    "@typedly/length": "^0.1.1"
   },
   "scripts": {
     "prepublishOnly": "npm run pkg && npm run clean",
@@ -26,6 +26,7 @@
   "keywords": [
     "@typescript-package",
     "@typescript-package/length",
+    "@typedly/length",
     "Length"
   ],
   "funding": [
