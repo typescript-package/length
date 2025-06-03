@@ -1,5 +1,5 @@
 // Interface.
-import { LengthOptions, LengthSettings } from '@typedly/settings';
+import { LengthOptions, LengthSettings } from '@typedly/length';
 /**
  * @description Represents a length value with optional minimum and maximum constraints.
  * @export
