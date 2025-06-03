@@ -1,7 +1,7 @@
 <a href="https://www.typescriptlang.org/">
   <img
     src="https://avatars.githubusercontent.com/u/189666396?s=150&u=9d55b1eb4ce258974ead76bf07ccf49ef0eb0ea7&v=4"
-    title="@typescript-package/length"
+    title="@typescript-package - The typescript package enhances the development of typescript-based applications by providing well-structured, reusable, easy-to-use packages."
   />
 </a>
 
@@ -13,6 +13,8 @@
 [![GitHub license][typescript-package-badge-license]][typescript-package-license]
 
 A **lightweight** TypeScript library for the length.
+
+**Version:** v0.1.0
 
 <br>
 
@@ -34,7 +36,7 @@ A **lightweight** TypeScript library for the length.
 ### 1. Install peer dependencies
 
 ```bash
-npm install @typedly/settings --save-peer
+npm install @typedly/length --save-peer
 ```
 
 ### 2. Install the package
